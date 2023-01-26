@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="logo"><a href="../index.html">My Assignments</a></h1>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">NEWS</a></li>
+          <li class="nav-item"><a href="#">ABOUT</a></li>
+          <li class="nav-item"><a href="#">BUSINESS</a></li>
+          <li class="nav-item"><a href="#">COMPANY</a></li>
+          <li class="nav-item"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="top-info">
+        <h1>Assignment 1</h1>
+        <p>This is a webpage that dynamically creates a table on window load event (using JavaScript code)</p>
+      </div>
+      <div id="multilicationTableContainer"></div>
+      <div class="user-input">
+        <div class="user-input-child">
+          <label for="row">Enter the number of rows: </label>
+          <input id="row" type="number" min="0" step="1" />
+        </div>
+        <div class="user-input-child">
+          <label for="column">Enter the number of columns: </label>
+          <input id="column" type="number" min="0" step="1" />
+        </div>
+        <div id="errorContainer">
+          <p id="errorMessage" class="error-message">*The number must be 0 or a positive integer.</p>
+        </div>
+        <button type="button" id="createTableBtn" class="user-input-child">Create a table</button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>© 2023 PARIPI.INC</p>
+        <p>Assignment 1</p>
+      </div>
+    </footer>
+
+    <script src="assignment1.js"></script>
+  </body>
+</html>

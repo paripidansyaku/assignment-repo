@@ -150,7 +150,7 @@ div#lbOverlay {
   height: 100%; /* Full height */
   top: 0;
   left: 0;
-  background-color: rgba(104, 49, 0, 0.85); /* Semitransparent brown background */
+  background-color: rgba(255, 255, 255, 0.9); /* Semitransparent brown background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,7 +179,8 @@ div#lbOverlay figure img {
 div#lbOverlay figure figcaption {
   text-align: center;
   font-size: 1.25em;
-  color: white;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
   margin-top: 10px;
   animation-name: zoom; /* animate the opening of the figure */
   animation-duration: 1s; /* over a 1-second interval */

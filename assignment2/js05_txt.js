@@ -100,7 +100,7 @@ function setupGallery() {
     let figureBox = document.createElement("figure");
     modalWindow.appendChild(figureBox);
 
-    /////// Assignment 2 processes start ////////
+    /////// Assignment 2 code start ////////
     // Create the add to favorites button.
     const addBtn = document.createElement("button");
     addBtn.setAttribute("type", "button");
@@ -116,8 +116,8 @@ function setupGallery() {
       // Check if there's already 5 pics in the favorites.
       if (favBox.children.length >= 5) {
         window.alert(
-          "You cannot add more than 5 pictures in your favorite collections.\n" +
-            "Please remove at least one picture from your favorite collections"
+          "You cannot add more than 5 images in your favorite images.\n" +
+            "Please remove at least one picture from your favorite images"
         );
         return;
       }
@@ -128,8 +128,8 @@ function setupGallery() {
       });
       if (duplicationChkArray.includes(cloneImg.alt)) {
         window.alert(
-          "You cannot add the same picture in your favorite collections.\n" +
-            "Please close this window and select a different picture."
+          "You cannot add the same image in your favorite images.\n" +
+            "Please close this window and select a different image."
         );
         return;
       }
@@ -158,7 +158,7 @@ function setupGallery() {
     });
 
     modalWindow.appendChild(addBtn);
-    /////// Assignment 2 processes end ////////
+    /////// Assignment 2 code end ////////
 
     let modalImage = this.cloneNode("true");
     figureBox.appendChild(modalImage);
